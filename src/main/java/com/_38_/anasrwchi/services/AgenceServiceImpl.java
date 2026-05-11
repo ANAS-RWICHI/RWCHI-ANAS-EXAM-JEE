@@ -43,6 +43,7 @@ public class AgenceServiceImpl implements AgenceService {
 
     @Override
     public AgenceDto updateAgence(Long id, AgenceDto agenceDto) {
+
         Agence existingAgence = agenceRepository.findById(id)
                 .orElseThrow(() -> new RuntimeException("Agence not found"));
 

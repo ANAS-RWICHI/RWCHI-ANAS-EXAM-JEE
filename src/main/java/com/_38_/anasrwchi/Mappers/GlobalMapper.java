@@ -1,13 +1,7 @@
 package com._38_.anasrwchi.Mappers;
 
-import com._38_.anasrwchi.Dtos.AgenceDto;
-import com._38_.anasrwchi.Dtos.VoitureDto;
-import com._38_.anasrwchi.Dtos.LocationDto;
-import com._38_.anasrwchi.Dtos.MotoDto;
-import com._38_.anasrwchi.entities.Agence;
-import com._38_.anasrwchi.entities.Moto;
-import com._38_.anasrwchi.entities.Voiture;
-import com._38_.anasrwchi.entities.Location;
+import com._38_.anasrwchi.Dtos.*;
+import com._38_.anasrwchi.entities.*;
 import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Service;
 
@@ -53,7 +47,6 @@ public class GlobalMapper {
         return moto;
     }
 
-    // --- Location Mappings ---
     public LocationDto fromLocation(Location location) {
         LocationDto locationDto = new LocationDto();
         BeanUtils.copyProperties(location, locationDto); //
