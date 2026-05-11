@@ -9,10 +9,11 @@ import lombok.NoArgsConstructor;
 import java.util.Date;
 
 @Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class LocationDto {
     private Long id;
     private Date dateDebut;
     private Date dateFin;
     private Double montantTotal;
-    private Vehicule vehicule;
 }

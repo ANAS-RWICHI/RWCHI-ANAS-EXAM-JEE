@@ -12,8 +12,10 @@ import lombok.NoArgsConstructor;
 
 
 @Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class MotoDto extends Vehicule {
     private Integer cylindree;
-    private TypeMoto typeMoto;
+    private String typeMoto;
     private Boolean casqueInclus;
 }

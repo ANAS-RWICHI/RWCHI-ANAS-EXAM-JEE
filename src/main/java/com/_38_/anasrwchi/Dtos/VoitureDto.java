@@ -10,9 +10,11 @@ import lombok.NoArgsConstructor;
 
 
 @Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class VoitureDto extends Vehicule {
 
     private Integer nombrePortes;
-    private TypeCarburant typeCarburant;
-    private BoiteVitesse boiteVitesse;
+    private String typeCarburant;
+    private String boiteVitesse;
 }

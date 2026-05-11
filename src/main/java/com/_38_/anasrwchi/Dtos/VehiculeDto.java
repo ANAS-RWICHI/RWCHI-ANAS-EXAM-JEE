@@ -12,18 +12,14 @@ import java.util.Date;
 import java.util.List;
 
 @Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class VehiculeDto {
     private Long id;
-
     private String marque;
     private String modele;
     private String matricule;
-
     private Double prixParJour;
     private Date dateMiseEnService;
-    private StatutVehicule statut;
-    private Agence agence;
-
-    private List<Location> locations;
-
+    private String statut;
 }
